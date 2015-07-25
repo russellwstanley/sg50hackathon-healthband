@@ -5,5 +5,7 @@
 # Home page
 GET     /healthcheck                           controllers.Application.healthcheck()
 
-POST     /users/:id/events/alarm                controllers.Application.addAlarm()
+POST     /users/:id/events/alarms                controllers.Application.addAlarm(id : String)
+GET      /users/:id/events/alarms                controllers.Application.getAlarms(id : String)
+
 

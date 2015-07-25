@@ -4,3 +4,21 @@ Listening for HTTP on /0:0:0:0:0:0:0:0:9005
 2015-07-25 11:41:11,848 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
+2015-07-25 13:55:15,549 - [INFO] - from play in play-akka.actor.default-dispatcher-2 
+Starting application default Akka system.
+
+2015-07-25 13:55:15,572 - [INFO] - from play in ScalaTest-run 
+Shutdown application default Akka system.
+
+2015-07-25 14:11:31,696 - [INFO] - from play in play-akka.actor.default-dispatcher-3 
+Starting application default Akka system.
+
+2015-07-25 14:11:31,749 - [INFO] - from play in ScalaTest-run 
+Shutdown application default Akka system.
+
+2015-07-25 14:12:00,519 - [INFO] - from play in play-akka.actor.default-dispatcher-2 
+Starting application default Akka system.
+
+2015-07-25 14:12:00,566 - [INFO] - from play in ScalaTest-run 
+Shutdown application default Akka system.
+
