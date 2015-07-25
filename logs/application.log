@@ -1,24 +1,135 @@
-2015-07-25 11:40:58,244 - [INFO] - from play in pool-5-thread-5 
-Listening for HTTP on /0:0:0:0:0:0:0:0:9005
+2015-07-25 16:32:10,302 - [INFO] - from play in pool-21-thread-1 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9002
 
-2015-07-25 11:41:11,848 - [INFO] - from play in play-internal-execution-context-1 
+2015-07-25 16:32:20,934 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-07-25 13:55:15,549 - [INFO] - from play in play-akka.actor.default-dispatcher-2 
+2015-07-25 16:33:36,610 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2015-07-25 16:34:47,924 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2015-07-25 16:35:39,668 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-07-25 16:36:45,677 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-07-25 16:42:17,439 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-07-25 16:49:19,758 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-07-25 16:49:56,509 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-07-25 16:51:05,610 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-07-25 16:51:17,343 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-07-25 16:51:37,744 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-07-25 16:52:09,195 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-07-25 16:53:12,465 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-07-25 16:54:30,514 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-07-25 16:55:12,442 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-07-25 16:57:39,391 - [INFO] - from play in play-internal-execution-context-8 
+Application started (Dev)
+
+2015-07-25 17:00:36,093 - [INFO] - from play in play-internal-execution-context-8 
+Application started (Dev)
+
+2015-07-25 17:00:50,646 - [INFO] - from play in play-internal-execution-context-8 
+Application started (Dev)
+
+2015-07-25 17:00:50,897 - [INFO] - from play in play-akka.actor.default-dispatcher-114 
 Starting application default Akka system.
 
-2015-07-25 13:55:15,572 - [INFO] - from play in ScalaTest-run 
+2015-07-25 17:01:28,488 - [INFO] - from play in play-internal-execution-context-8 
 Shutdown application default Akka system.
 
-2015-07-25 14:11:31,696 - [INFO] - from play in play-akka.actor.default-dispatcher-3 
+2015-07-25 17:01:28,557 - [INFO] - from play in play-internal-execution-context-8 
+Application started (Dev)
+
+2015-07-25 17:01:28,807 - [INFO] - from play in play-akka.actor.default-dispatcher-110 
 Starting application default Akka system.
 
-2015-07-25 14:11:31,749 - [INFO] - from play in ScalaTest-run 
+2015-07-25 17:02:26,954 - [INFO] - from play in play-internal-execution-context-13 
 Shutdown application default Akka system.
 
-2015-07-25 14:12:00,519 - [INFO] - from play in play-akka.actor.default-dispatcher-2 
+2015-07-25 17:02:27,007 - [INFO] - from play in play-internal-execution-context-13 
+Application started (Dev)
+
+2015-07-25 17:03:12,037 - [INFO] - from play in play-internal-execution-context-13 
+Application started (Dev)
+
+2015-07-25 17:03:12,361 - [INFO] - from play in play-akka.actor.default-dispatcher-121 
 Starting application default Akka system.
 
-2015-07-25 14:12:00,566 - [INFO] - from play in ScalaTest-run 
+2015-07-25 17:03:59,838 - [INFO] - from play in play-internal-execution-context-13 
 Shutdown application default Akka system.
+
+2015-07-25 17:03:59,889 - [INFO] - from play in play-internal-execution-context-13 
+Application started (Dev)
+
+2015-07-25 17:04:00,129 - [INFO] - from play in play-akka.actor.default-dispatcher-133 
+Starting application default Akka system.
+
+2015-07-25 17:06:31,360 - [INFO] - from play in play-internal-execution-context-13 
+Shutdown application default Akka system.
+
+2015-07-25 17:06:31,411 - [INFO] - from play in play-internal-execution-context-13 
+Application started (Dev)
+
+2015-07-25 17:06:31,633 - [INFO] - from play in play-akka.actor.default-dispatcher-143 
+Starting application default Akka system.
+
+2015-07-25 17:08:56,767 - [INFO] - from play in play-internal-execution-context-13 
+Shutdown application default Akka system.
+
+2015-07-25 17:08:56,814 - [INFO] - from play in play-internal-execution-context-13 
+Application started (Dev)
+
+2015-07-25 17:09:14,833 - [INFO] - from play in play-akka.actor.default-dispatcher-151 
+Starting application default Akka system.
+
+2015-07-25 17:10:18,897 - [INFO] - from play in play-internal-execution-context-13 
+Shutdown application default Akka system.
+
+2015-07-25 17:10:18,946 - [INFO] - from play in play-internal-execution-context-13 
+Application started (Dev)
+
+2015-07-25 17:10:20,168 - [INFO] - from play in play-akka.actor.default-dispatcher-154 
+Starting application default Akka system.
+
+2015-07-25 17:13:35,008 - [INFO] - from play in play-internal-execution-context-13 
+Shutdown application default Akka system.
+
+2015-07-25 17:13:35,058 - [INFO] - from play in play-internal-execution-context-13 
+Application started (Dev)
+
+2015-07-25 17:13:35,088 - [INFO] - from play in play-akka.actor.default-dispatcher-146 
+Starting application default Akka system.
+
+2015-07-25 17:14:23,420 - [INFO] - from play in play-internal-execution-context-13 
+Shutdown application default Akka system.
+
+2015-07-25 17:14:23,472 - [INFO] - from play in play-internal-execution-context-13 
+Application started (Dev)
+
+2015-07-25 17:14:23,529 - [INFO] - from play in play-akka.actor.default-dispatcher-154 
+Starting application default Akka system.
 

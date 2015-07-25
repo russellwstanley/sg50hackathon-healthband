@@ -19,10 +19,10 @@ class HacksSpec extends PlaySpec with OneAppPerSuite with JsonSerialization{
   "Adding and getting an alarm" should {
     "work properly " in {
       val userid = "testuser"
-      val alarm = AlarmState(0,Location(12345,23456))
-      val postResult = route(FakeRequest(POST,s"/users/$userid/events/alarms").withJsonBody(Json.toJson(alarm))).get
+      val alarm = AlarmState(0,Location(12345.6,23456.98))
+      val postResult = route(FakeRequest(POST,s"/api/users/$userid/events/alarms").withJsonBody(Json.toJson(alarm))).get
       status(postResult) must equal(CREATED)
-      val getResult = route(FakeRequest(GET,s"/users/$userid/events/alarms")).get
+      val getResult = route(FakeRequest(GET,s"/api/users/$userid/events/alarms")).get
       contentAsJson(getResult).validate[List[AlarmState]].get must equal(List(alarm))
     }
   }

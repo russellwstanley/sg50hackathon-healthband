@@ -5,7 +5,11 @@
 # Home page
 GET     /healthcheck                           controllers.Application.healthcheck()
 
-POST     /users/:id/events/alarms                controllers.Application.addAlarm(id : String)
-GET      /users/:id/events/alarms                controllers.Application.getAlarms(id : String)
+POST     /api/users/:id/events/alarms                controllers.Application.addAlarm(id : String)
+GET      /api/users/:id/events/alarms                controllers.Application.getAlarms(id : String)
 
+GET      /ui/dashboard                               controllers.Application.overviewDashboard()
+GET      /ui/users/:id/dashboard                     controllers.Application.userDashboard(id : String)
 
+# Map static resources from the /public folder to the /assets URL path
+GET     /ui/*file               controllers.Assets.versioned(path="/public", file: Asset)
