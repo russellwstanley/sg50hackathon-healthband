@@ -1,4 +1,6 @@
 build
+*.pyc
+.idea
 bin 
 **/*.class
 target
