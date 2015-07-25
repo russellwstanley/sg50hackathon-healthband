@@ -227,14 +227,14 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-yellow">
+                    <div id="heartratecontainer" class="panel panel-green">
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
                                     <!--<img src="/ui/images/heart.png"/>-->
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
+                                    <div id="heartratecounter" class="huge">NK</div>
                                     <div>Heart Rate</div>
                                 </div>
                             </div>
@@ -337,8 +337,33 @@
         });
     }
 
+    function updateHeartrate(){
+        $.getJSON("/api/users/@userId/events/heartrate", function(data){
+            if(data.length>0){
+               current = data[0].bpm;
+                if(current > 100 || current < 50){
+                    $("#heartratecontainer").addClass("panel-red");
+                    $("#heartratecontainer").removeClass("panel-green");
+                    $("#heartratecontainer").removeClass("panel-yellow");
+                }
+                else if(current > 90 || current < 60){
+                    $("#heartratecontainer").addClass("panel-yellow");
+                    $("#heartratecontainer").removeClass("panel-red");
+                    $("#heartratecontainer").removeClass("panel-green");
+                }
+                else{
+                    $("#heartratecontainer").addClass("panel-green");
+                    $("#heartratecontainer").removeClass("panel-yellow");
+                    $("#heartratecontainer").removeClass("panel-red");
+                }
+                $("#heartratecounter").text(current);
+            }
+        });
+    }
+
     window.setInterval(updateFallCount, 1000);
     window.setInterval(updatePanicCount, 1000);
+    window.setInterval(updateHeartrate, 1000);
 
 </script>
 

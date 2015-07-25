@@ -1,5 +1,5 @@
 
-import controllers.{JsonSerialization, Location, AlarmState}
+import controllers.{Heartrate, JsonSerialization, Location, AlarmState}
 import org.scalatestplus.play.{OneAppPerSuite, PlaySpec}
 import play.api.test._
 import play.api.test.Helpers._
@@ -14,6 +14,16 @@ class HacksSpec extends PlaySpec with OneAppPerSuite with JsonSerialization{
 
 
 
+  }
+  "Adding and getting heartrate" should {
+    "work properly " in {
+      val userid = "testuser"
+      val heartrate = Heartrate(70,Location(12345.6,23456.98))
+      val postResult = route(FakeRequest(POST,s"/api/users/$userid/events/heartrate").withJsonBody(Json.toJson(heartrate))).get
+      status(postResult) must equal(CREATED)
+      val getResult = route(FakeRequest(GET,s"/api/users/$userid/events/heartrate")).get
+      contentAsJson(getResult).validate[List[Heartrate]].get must equal(List(heartrate))
+    }
   }
 
   "Adding and getting a panicalarm" should {

@@ -6,7 +6,9 @@
 GET     /healthcheck                           controllers.Application.healthcheck()
 
 POST     /api/users/:id/events/fall                  controllers.Application.addFallAlarm(id : String)
+POST     /api/users/:id/events/heartrate             controllers.Application.reportHeartrate(id : String)
 GET      /api/users/:id/events/fall                  controllers.Application.getFallAlarms(id : String)
+GET      /api/users/:id/events/heartrate             controllers.Application.getHeartrate(id : String)
 POST     /api/users/:id/events/panic                 controllers.Application.addPanicAlarm(id : String)
 GET      /api/users/:id/events/panic                 controllers.Application.getPanicAlarms(id : String)
 GET      /api/dengueclusters                         controllers.Application.getDengueClusters(format : Option[String])

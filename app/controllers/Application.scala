@@ -21,6 +21,7 @@ import scala.concurrent.Future
 
 case class Location(latitude : Double, longitude : Double)
 case class AlarmState(state : Int, location : Location)
+case class Heartrate(bpm : Int, location : Location)
 case class User(id : String)
 
 trait JsonSerialization{
@@ -29,6 +30,9 @@ trait JsonSerialization{
   implicit val alarmStateWrites = Json.writes[AlarmState]
   implicit val locationReads = Json.reads[Location]
   implicit val alarmStateReads = Json.reads[AlarmState]
+  implicit val heartrateReads = Json.reads[Heartrate]
+  implicit val heartrateWrites = Json.writes[Heartrate]
+
 
 }
 
@@ -41,6 +45,19 @@ object Application extends Controller with JsonSerialization{
 
   def healthcheck = Action{
     Ok("hello")
+  }
+
+  def reportHeartrate(id : String) = Action(parse.json){
+    request => {
+      usersActor ! HeartrateMsg(id, request.body.validate[Heartrate].get)
+      Created("ok")
+    }
+  }
+
+  def getHeartrate(id : String) = Action.async{
+    (usersActor ? GetHeartrateMsg(id)).mapTo[List[Heartrate]]
+      .map(heartrate => Ok(Json.toJson(heartrate)))
+
   }
 
   def addFallAlarm(id : String) = Action(parse.json){
